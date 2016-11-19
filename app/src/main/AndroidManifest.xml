@@ -24,9 +24,12 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity android:name=".MainActivityU" />
-        <activity android:name=".MainActivityC"></activity>
+        <activity android:name=".MainActivityC" />
+        <activity android:name=".ListCorps" />
+        <activity android:name=".ListConvs" />
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>

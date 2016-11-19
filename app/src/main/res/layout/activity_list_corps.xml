@@ -11,7 +11,7 @@
         android:id="@+id/content"
         android:background="#084B8A"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
 
@@ -53,7 +53,7 @@
                             android:layout_width="@dimen/user_profile_avatar_size"
                             android:layout_height="@dimen/user_profile_avatar_size"
                             android:background="#ffffff"
-                            android:src="@drawable/apple"
+                            android:src="@drawable/Cara_de_Dr_House"
                             android:layout_marginRight="16dp" />
 
                         <LinearLayout
@@ -66,21 +66,21 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Blue Fruit Corp"
+                                android:text="John Smith"
                                 android:textColor="#ffffff"
                                 android:textSize="24sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="\@bluefriut"
+                                android:text="\@jsmith"
                                 android:textColor="#bbbbbb"
                                 android:textSize="12sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Searching for a good life."
+                                android:text="Mobile development passionate."
                                 android:textColor="#ffffff"
                                 android:textSize="12sp" />
 
@@ -120,12 +120,10 @@
 
             </FrameLayout>
 
-
         </android.support.design.widget.AppBarLayout>
 
-
-
     </android.support.design.widget.CoordinatorLayout>
+
 
     <LinearLayout
         android:id="@+id/email_login_form"
@@ -223,5 +221,4 @@
             android:textSize="16sp"/>
 
     </LinearLayout>
-
 </RelativeLayout>
