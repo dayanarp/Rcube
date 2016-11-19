@@ -78,7 +78,7 @@
                 android:id="@+id/imageView6" />
 
             <AutoCompleteTextView
-                android:id="@+id/email"
+                android:id="@+id/name"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -86,7 +86,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_email"
+                android:hint="Name"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true"
@@ -113,7 +113,7 @@
                 android:id="@+id/imageView7" />
 
             <EditText
-                android:id="@+id/mail"
+                android:id="@+id/email"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -121,7 +121,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_password"
+                android:hint="Email"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
@@ -157,7 +157,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_password"
+                android:hint="Telephone"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
@@ -192,7 +192,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_password"
+                android:hint="Password"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
@@ -227,7 +227,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_password"
+                android:hint="Confirm password"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
@@ -257,7 +257,7 @@
         android:layout_height="wrap_content"
         android:text="By signing up your are accepting our terms"
         android:textColor="#ffffff"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:textStyle="normal|bold"
         android:textSize="15sp"
         android:layout_centerVertical="true"

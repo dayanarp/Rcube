@@ -29,7 +29,8 @@
         <activity android:name=".MainActivityC" />
         <activity android:name=".ListCorps" />
         <activity android:name=".ListConvs" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Request"></activity>
     </application>
 
 </manifest>
