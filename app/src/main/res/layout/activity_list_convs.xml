@@ -49,7 +49,7 @@
                         android:clipChildren="false">
 
                         <ImageView
-                            android:id="@+id/ivUserProfilePhoto"
+                            android:id="@+id/ProfilePhoto"
                             android:layout_width="@dimen/user_profile_avatar_size"
                             android:layout_height="@dimen/user_profile_avatar_size"
                             android:background="#ffffff"
@@ -85,7 +85,7 @@
                                 android:textSize="12sp" />
 
                             <Button
-                                android:id="@+id/btnFollow"
+                                android:id="@+id/btn_edit"
                                 android:layout_width="match_parent"
                                 android:layout_height="24dp"
                                 android:layout_marginRight="24dp"
@@ -156,7 +156,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/email"
+                android:id="@+id/conv1"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -177,6 +177,7 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
+                android:clickable="true"
                 android:background="#04B404"
                 app:srcCompat="@android:drawable/ic_dialog_email"
                 android:id="@+id/imageView6" />
@@ -189,6 +190,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#04B404"
+                android:clickable="true"
                 app:srcCompat="@android:drawable/ic_dialog_email"
                 android:id="@+id/imageView1" />
 
@@ -202,7 +204,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/password"
+                android:id="@+id/conv2"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -224,6 +226,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#04B404"
+                android:clickable="true"
                 app:srcCompat="@android:drawable/ic_lock_idle_lock"
                 android:id="@+id/imageView7" />
 
@@ -234,6 +237,7 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
+                android:clickable="true"
                 android:background="#04B404"
                 app:srcCompat="@android:drawable/ic_lock_idle_lock"
                 android:id="@+id/imageView2" />
@@ -246,7 +250,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/password1"
+                android:id="@+id/conv3"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -268,6 +272,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#04B404"
+                android:clickable="true"
                 app:srcCompat="@android:drawable/ic_lock_idle_lock"
                 android:id="@+id/imageView71" />
 
@@ -278,6 +283,7 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
+                android:clickable="true"
                 android:background="#04B404"
                 app:srcCompat="@android:drawable/ic_lock_idle_lock"
                 android:id="@+id/imageView3" />
@@ -296,6 +302,7 @@
                 android:layout_height="wrap_content"
                 android:text="< Previous"
                 android:textColor="#ffffff"
+                android:clickable="true"
                 android:id="@+id/pbutton"/>
 
             <TextView
@@ -304,6 +311,7 @@
                 android:layout_marginLeft="35sp"
                 android:text="  Next >  "
                 android:textColor="#ffffff"
+                android:clickable="true"
                 android:id="@+id/nbutton"/>
 
         </LinearLayout>

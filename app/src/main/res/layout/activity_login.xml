@@ -133,6 +133,7 @@
         android:layout_marginTop="10dp"
         android:textStyle="normal|bold"
         android:textSize="20sp"
+        android:clickable="true"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textViewP" />
@@ -153,6 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Join Us"
+        android:clickable="true"
         android:textColor="#04B404"
         android:layout_marginTop="10dp"
         android:textStyle="normal|bold"

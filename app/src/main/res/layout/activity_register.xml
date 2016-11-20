@@ -239,7 +239,7 @@
 
         </RelativeLayout>
         <Button
-            android:id="@+id/email_sign_in_button"
+            android:id="@+id/sen_button"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -257,6 +257,7 @@
         android:layout_height="wrap_content"
         android:text="By signing up your are accepting our terms"
         android:textColor="#ffffff"
+        android:clickable="true"
         android:layout_marginTop="10dp"
         android:textStyle="normal|bold"
         android:textSize="15sp"
