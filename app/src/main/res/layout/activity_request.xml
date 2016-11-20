@@ -161,7 +161,7 @@
                 app:srcCompat="@android:drawable/ic_dialog_email"
                 android:id="@+id/imageView6" />
 
-            <TextView
+            <Spinner
                 android:id="@+id/email"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
@@ -197,7 +197,7 @@
                 app:srcCompat="@android:drawable/ic_lock_idle_lock"
                 android:id="@+id/imageView7" />
 
-            <TextView
+            <Spinner
                 android:id="@+id/password"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"

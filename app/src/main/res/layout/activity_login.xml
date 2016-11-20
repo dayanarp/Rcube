@@ -100,7 +100,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_password"
+                android:hint="Password"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
