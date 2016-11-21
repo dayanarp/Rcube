@@ -1,25 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#084B8A"
-    tools:context="rr.rcube.LoginActivity">
-
-    <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+    tools:context="com.example.dayana.myapplication.Login"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,12 +19,11 @@
         android:text="Rcube"
         android:textColor="#ffffff"
         android:textStyle="normal|bold"
-        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_gravity="center"
         android:textSize="50sp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView" />
-
 
     <LinearLayout
         android:id="@+id/email_login_form"
@@ -56,7 +47,7 @@
                 app:srcCompat="@android:drawable/ic_dialog_email"
                 android:id="@+id/imageView6" />
 
-            <AutoCompleteTextView
+            <EditText
                 android:id="@+id/email"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
@@ -65,14 +56,11 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
+                android:hint="Email"
                 android:maxLines="1"
-                android:singleLine="true"
                 android:layout_toRightOf="@+id/imageView6"
                 android:layout_toEndOf="@+id/imageView6" />
-
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -101,16 +89,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:hint="Password"
-                android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true"
                 android:layout_toRightOf="@+id/imageView7"
                 android:layout_toEndOf="@+id/imageView7" />
-
-
         </RelativeLayout>
+
         <Button
             android:id="@+id/email_sign_in_button"
             style="?android:textAppearanceSmall"
@@ -122,7 +107,6 @@
             android:textStyle="bold"
             android:textColor="#ffffff"
             android:textSize="16sp"/>
-
     </LinearLayout>
 
     <TextView
@@ -134,8 +118,7 @@
         android:textStyle="normal|bold"
         android:textSize="20sp"
         android:clickable="true"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:id="@+id/textViewP" />
 
     <TextView
@@ -146,8 +129,7 @@
         android:layout_marginTop="60dp"
         android:textStyle="normal|bold"
         android:textSize="20sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:id="@+id/textViewD" />
 
     <TextView
@@ -159,8 +141,7 @@
         android:layout_marginTop="10dp"
         android:textStyle="normal|bold"
         android:textSize="20sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:id="@+id/textViewJ" />
 
 </LinearLayout>
