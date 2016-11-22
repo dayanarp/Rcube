@@ -1,5 +1,7 @@
 package com.example.dayana.myapplication;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -67,6 +69,8 @@ public class Login extends AppCompatActivity {
                 else {
                     startActivity(new Intent(this, MainActivityC.class));
                 }
+            } else {
+                dialogCreate("Invalid user or password.");
             }
         }
     }
@@ -80,5 +84,18 @@ public class Login extends AppCompatActivity {
             }
         }
         return b;
+    }
+
+    public void dialogCreate(String message) {
+        final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Information");
+        alertDialog.setMessage(message);
+        alertDialog.setCancelable(false);
+        alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialog.dismiss();
+            }
+        });
+        alertDialog.show();
     }
 }
