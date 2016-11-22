@@ -63,6 +63,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/username"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="John Smith"
@@ -70,13 +71,15 @@
                                 android:textSize="24sp" />
 
                             <TextView
+                                android:id="@+id/useremail"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="\@jsmith"
-                                android:textColor="#bbbbbb"
+                                android:textColor="#ffffff"
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/userphone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mobile development passionate."
