@@ -29,5 +29,7 @@ public class MainActivityU extends Activity {
                 startActivity(new Intent(MainActivityU.this, ListCorp.class));
             }
         });
+
+
     }
 }
