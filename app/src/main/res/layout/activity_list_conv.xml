@@ -154,15 +154,15 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_width="221dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:hint="Blue Fruit Corp \n 0500-4533456"
                 android:inputType="textEmailAddress"
                 android:textSize="16sp"
                 android:maxLines="2" />
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -173,8 +173,8 @@
                 android:id="@+id/imageView6" />
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -202,15 +202,15 @@
                 android:paddingTop="10dp"
                 android:layout_width="221dp"
                 android:textSize="16sp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:hint="Blue Fruit Corp \n 0500-4533456"
                 android:maxLines="2"
                 android:layout_toRightOf="@+id/imageView7"
                 android:layout_toEndOf="@+id/imageView7" />
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -221,8 +221,8 @@
                 android:id="@+id/imageView7" />
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -248,15 +248,15 @@
                 android:paddingTop="10dp"
                 android:layout_width="222dp"
                 android:textSize="16sp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:hint="Blue Fruit Corp \n 0500-4533456"
                 android:maxLines="2"
                 android:layout_toRightOf="@+id/imageView7"
                 android:layout_toEndOf="@+id/imageView7" />
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -267,8 +267,8 @@
                 android:id="@+id/imageView71" />
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"

@@ -4,10 +4,11 @@
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar">
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,13 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".Register" />
-        <activity android:name=".MainActivityU" />
-        <activity android:name=".MainActivityC" />
-        <activity android:name=".Request" />
-        <activity android:name=".ListConv" />
-        <activity android:name=".ListCorp"></activity>
+        <activity android:name=".Login"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:name=".Register"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:name=".MainActivityU"
+            android:theme="@style/AppTheme.TransparentActivity"/>
+        <activity android:name=".MainActivityC"
+            android:theme="@style/AppTheme.TransparentActivity"/>
+        <activity android:name=".Request"
+            android:theme="@style/AppTheme.TransparentActivity"/>
+        <activity android:name=".ListConv"
+            android:theme="@style/AppTheme.TransparentActivity"/>
+        <activity android:name=".ListCorp"
+            android:theme="@style/AppTheme.TransparentActivity">
+        </activity>
     </application>
 
 </manifest>

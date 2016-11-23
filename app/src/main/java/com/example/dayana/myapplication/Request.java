@@ -1,9 +1,10 @@
 package com.example.dayana.myapplication;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Request extends AppCompatActivity {
+public class Request extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

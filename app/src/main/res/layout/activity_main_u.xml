@@ -68,7 +68,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="John Smith"
                                 android:textColor="#ffffff"
-                                android:textSize="24sp" />
+                                android:textSize="18sp" />
 
                             <TextView
                                 android:id="@+id/useremail"
@@ -109,7 +109,7 @@
                 <android.support.design.widget.TabLayout
                     android:id="@+id/tlUserProfileTabs"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="56dp"
                     android:background="#01bcd5"
                     app:tabGravity="fill"
                     app:tabIndicatorColor="#5be5ad"
@@ -137,8 +137,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -156,7 +156,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:hint="City"
                 android:inputType="textEmailAddress"
                 android:textSize="16sp"
@@ -174,8 +174,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -194,7 +194,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:hint="Material"
                 android:maxLines="1"
                 android:singleLine="true"

@@ -1,5 +1,6 @@
 package com.example.dayana.myapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import android.widget.RadioButton;
 
 import java.util.HashMap;
 
-public class Register extends AppCompatActivity {
+public class Register extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

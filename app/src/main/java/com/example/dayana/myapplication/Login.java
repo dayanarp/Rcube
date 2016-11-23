@@ -1,5 +1,6 @@
 package com.example.dayana.myapplication;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,7 +14,7 @@ import android.widget.EditText;
 
 import java.util.HashMap;
 
-public class Login extends AppCompatActivity {
+public class Login extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +80,8 @@ public class Login extends AppCompatActivity {
         boolean b = false;
         HashMap u = AppData.getUsers();
         if (u.containsKey(user)){
-            if(u.get(user) == pass){
+            String y = (String) u.get(user);
+            if(y.equals(pass)){
                 b = true;
             }
         }

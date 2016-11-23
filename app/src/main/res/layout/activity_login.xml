@@ -10,7 +10,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#084B8A"
-    tools:context="com.example.dayana.myapplication.Login"
     android:orientation="vertical">
 
     <TextView
@@ -37,8 +36,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -55,7 +54,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:inputType="textEmailAddress"
                 android:hint="Email"
                 android:maxLines="1"
@@ -69,8 +68,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="?attr/actionBarSize"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -87,7 +86,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 android:hint="Password"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"

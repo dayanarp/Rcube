@@ -1,10 +1,14 @@
 package com.example.dayana.myapplication;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivityU extends AppCompatActivity {
+public class MainActivityU extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,5 +21,13 @@ public class MainActivityU extends AppCompatActivity {
         username.setText(user.getName());
         useremail.setText(user.getEmail());
         userphone.setText(user.getPhone());
+        Button btn = (Button) findViewById(R.id.send_button);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(new Intent(MainActivityU.this, ListCorp.class));
+            }
+        });
     }
 }
