@@ -43,7 +43,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_dialog_email"
+                android:src="@drawable/ic_action_content_mail"
                 android:id="@+id/imageView6" />
 
             <EditText
@@ -75,7 +75,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
+                android:src="@drawable/ic_action_action_https"
                 android:id="@+id/imageView7" />
 
             <EditText
@@ -114,8 +114,8 @@
         android:text="forgot your password?"
         android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:textStyle="normal|bold"
-        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textSize="15sp"
         android:clickable="true"
         android:layout_gravity="center"
         android:id="@+id/textViewP" />
@@ -126,8 +126,8 @@
         android:text="Do you want to save the world?"
         android:textColor="#ffffff"
         android:layout_marginTop="60dp"
-        android:textStyle="normal|bold"
-        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textSize="15sp"
         android:layout_gravity="center"
         android:id="@+id/textViewD" />
 
@@ -139,7 +139,7 @@
         android:textColor="#04B404"
         android:layout_marginTop="10dp"
         android:textStyle="normal|bold"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_gravity="center"
         android:id="@+id/textViewJ" />
 

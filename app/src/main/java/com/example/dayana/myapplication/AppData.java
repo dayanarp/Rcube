@@ -15,6 +15,10 @@ public class AppData {
     private static HashMap<String, String> usersType;
     private static List<Agreement> agreementList;
     private static User currentU;
+    private static String[] cities = {"Select City","Caracas", "Valencia", "Barcelona", "Pto. La Cruz", "Maracaibo"};
+    private static String[] materials = {"Select Material","Papel", "Plastico", "Vidrio"};
+    private static String[] quant = {"Select Quantity","10", "20", "35", "50", "70", "100"};
+    private static String[] unit = {"Select Unit of messure","Kgs", "Lts", "Units"};
 
     public static List<User> getUserList() {
         return userList;
@@ -64,4 +68,35 @@ public class AppData {
         AppData.userString = userString;
     }
 
+    public static String[] getCities() {
+        return cities;
+    }
+
+    public static String[] getMaterials() {
+        return materials;
+    }
+
+    public static void setCities(String[] cities) {
+        AppData.cities = cities;
+    }
+
+    public static void setMaterials(String[] materials) {
+        AppData.materials = materials;
+    }
+
+    public static String[] getQuant() {
+        return quant;
+    }
+
+    public static String[] getUnit() {
+        return unit;
+    }
+
+    public static void setQuant(String[] quant) {
+        AppData.quant = quant;
+    }
+
+    public static void setUnit(String[] unit) {
+        AppData.unit = unit;
+    }
 }

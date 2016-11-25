@@ -1,6 +1,8 @@
 package com.example.dayana.myapplication;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import java.util.HashMap;
 
@@ -91,7 +94,7 @@ public class Register extends Activity {
             cancel = true;
         }
 
-        if(s_pass != s_cpass){
+        if(!s_pass.equals(s_cpass)){
             cpass.setError("Passwords must match");
             focusView = cpass;
             cancel = true;
@@ -101,12 +104,27 @@ public class Register extends Activity {
             focusView.requestFocus();
         } else{
             User newUser = new User(s_name, s_email,s_phone, s_pass, type);
-            AppData.getUsers().put(s_name,s_pass);
-            AppData.getUsersType().put(s_name,type);
+            AppData.getUsers().put(s_email,s_pass);
+            AppData.getUsersType().put(s_email,type);
             AppData.getUserList().add(newUser);
-            AppData.getUserString().put(s_name,newUser);
-            finish();
-            startActivity(new Intent(this, Login.class));
+            AppData.getUserString().put(s_email,newUser);
+            dialogCreateI("Se ha registrado exitosamente.");
         }
     }
+
+    public void dialogCreateI(String message) {
+        final AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Information");
+        alertDialog.setMessage(message);
+        alertDialog.setCancelable(false);
+        alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialog.dismiss();
+                finish();
+                startActivity(new Intent(Register.this, Login.class));
+            }
+        });
+        alertDialog.show();
+    }
+
 }

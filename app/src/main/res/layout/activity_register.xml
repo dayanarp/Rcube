@@ -29,23 +29,32 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content">
 
-        <RadioButton
-            android:text="Person"
-            android:buttonTint="#ffffff"
-            android:textColor="#ffffff"
-            android:paddingRight="16dp"
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton" />
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButton"
+            android:id="@+id/rgroup">
 
-        <RadioButton
-            android:text="Organization"
-            android:buttonTint="#ffffff"
-            android:layout_toRightOf="@id/radioButton"
-            android:textColor="#ffffff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton2" />
+            <RadioButton
+                android:text="Person"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"
+                android:paddingRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton" />
+
+            <RadioButton
+                android:text="Organization"
+                android:buttonTint="#ffffff"
+                android:layout_toRightOf="@id/radioButton"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2" />
+        </RadioGroup>
+
     </RelativeLayout>
 
     <LinearLayout
@@ -67,7 +76,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_dialog_email"
+                app:srcCompat="@drawable/ic_action_social_person"
                 android:id="@+id/imageView6" />
 
             <EditText
@@ -80,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:hint="Name"
-                android:inputType="textEmailAddress"
+                android:inputType="textPersonName"
                 android:maxLines="1"
                 android:layout_toRightOf="@+id/imageView6"
                 android:layout_toEndOf="@+id/imageView6" />
@@ -99,7 +108,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
+                app:srcCompat="@drawable/ic_action_content_mail"
                 android:id="@+id/imageView7" />
 
             <EditText
@@ -112,8 +121,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:hint="Email"
+                android:inputType="textEmailAddress"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
                 android:maxLines="1"
                 android:layout_toRightOf="@+id/imageView7"
                 android:layout_toEndOf="@+id/imageView7" />
@@ -132,7 +141,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
+                app:srcCompat="@drawable/ic_action_communication_call"
                 android:id="@+id/imageView1" />
 
             <EditText
@@ -146,8 +155,8 @@
                 android:layout_height="56dp"
                 android:hint="Telephone"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
                 android:maxLines="1"
+                android:inputType="phone"
                 android:layout_toRightOf="@+id/imageView1"
                 android:layout_toEndOf="@+id/imageView1" />
         </RelativeLayout>
@@ -165,7 +174,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
+                app:srcCompat="@drawable/ic_action_action_https"
                 android:id="@+id/imageView2" />
 
             <EditText
@@ -198,7 +207,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:background="#00BFFF"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
+                app:srcCompat="@drawable/ic_action_action_https"
                 android:id="@+id/imageView3" />
 
             <EditText
@@ -238,8 +247,8 @@
         android:textColor="#ffffff"
         android:clickable="true"
         android:layout_marginTop="10dp"
-        android:textStyle="normal|bold"
-        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textSize="12sp"
         android:layout_gravity="center"
         android:id="@+id/textViewP" />
 </LinearLayout>

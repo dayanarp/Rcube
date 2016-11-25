@@ -104,7 +104,7 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="48dp">
+                android:layout_height="56dp">
 
                 <android.support.design.widget.TabLayout
                     android:id="@+id/tlUserProfileTabs"
@@ -136,6 +136,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <Spinner
+                android:id="@+id/city"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="City"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:layout_toStartOf="@+id/imageView6" />
+
             <ImageView
                 android:layout_width="56dp"
                 android:layout_height="56dp"
@@ -145,25 +158,11 @@
                 android:paddingTop="10dp"
                 android:background="#04B404"
                 android:clickable="true"
-                app:srcCompat="@android:drawable/ic_dialog_email"
-                android:id="@+id/imageView6" />
-
-            <Spinner
-                android:id="@+id/city"
-                android:background="#ffffff"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:hint="City"
-                android:inputType="textEmailAddress"
-                android:textSize="16sp"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:layout_toRightOf="@+id/imageView6"
-                android:layout_toEndOf="@+id/imageView6" />
+                android:src="@drawable/ic_action_hardware_keyboard_arrow_down"
+                android:id="@+id/imageView6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
 
         </RelativeLayout>
@@ -173,6 +172,18 @@
             android:paddingTop="10dp"
             android:layout_height="wrap_content">
 
+            <Spinner
+                android:id="@+id/material"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="56dp"
+                android:hint="Material"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/imageView7"
+                android:layout_toStartOf="@+id/imageView7" />
+
             <ImageView
                 android:layout_width="56dp"
                 android:layout_height="56dp"
@@ -182,24 +193,11 @@
                 android:paddingTop="10dp"
                 android:clickable="true"
                 android:background="#04B404"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
-                android:id="@+id/imageView7" />
-
-            <Spinner
-                android:id="@+id/material"
-                android:background="#ffffff"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_height="56dp"
-                android:hint="Material"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:layout_toRightOf="@+id/imageView7"
-                android:layout_toEndOf="@+id/imageView7" />
+                android:src="@drawable/ic_action_hardware_keyboard_arrow_down"
+                android:id="@+id/imageView7"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
 
         </RelativeLayout>

@@ -65,13 +65,15 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/username"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Blue Fruit Corp"
                                 android:textColor="#ffffff"
-                                android:textSize="24sp" />
+                                android:textSize="18sp" />
 
                             <TextView
+                                android:id="@+id/useremail"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="\@bluefriut"
@@ -79,6 +81,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/userphone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Searching for a good life."
@@ -107,12 +110,12 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="48dp">
+                android:layout_height="56dp">
 
                 <android.support.design.widget.TabLayout
                     android:id="@+id/tlUserProfileTabs"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="56dp"
                     android:background="#01bcd5"
                     app:tabGravity="fill"
                     app:tabIndicatorColor="#5be5ad"
@@ -141,9 +144,9 @@
         android:paddingTop="24dp"
         android:background="#084B8A">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
@@ -153,24 +156,14 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:layout_width="221dp"
                 android:layout_height="56dp"
                 android:hint="Blue Fruit Corp \n 0500-4533456"
                 android:inputType="textEmailAddress"
                 android:textSize="16sp"
-                android:maxLines="2" />
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:clickable="true"
-                android:background="#04B404"
-                app:srcCompat="@android:drawable/ic_dialog_email"
-                android:id="@+id/imageView6" />
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:layout_toStartOf="@+id/imageView6" />
 
             <ImageView
                 android:layout_width="56dp"
@@ -181,17 +174,35 @@
                 android:paddingTop="10dp"
                 android:background="#04B404"
                 android:clickable="true"
-                app:srcCompat="@android:drawable/ic_dialog_email"
-                android:id="@+id/imageView1" />
+                android:src="@drawable/ic_action_navigation_close"
+                android:id="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:clickable="true"
+                android:background="#04B404"
+                android:src="@drawable/ic_action_content_create"
+                android:id="@+id/imageView6"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:layout_toStartOf="@+id/imageView1" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:paddingTop="10dp"
             android:orientation="horizontal"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/conv2"
@@ -200,25 +211,13 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:layout_width="221dp"
+                android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_height="56dp"
                 android:hint="Blue Fruit Corp \n 0500-4533456"
                 android:maxLines="2"
-                android:layout_toRightOf="@+id/imageView7"
-                android:layout_toEndOf="@+id/imageView7" />
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:background="#04B404"
-                android:clickable="true"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
-                android:id="@+id/imageView7" />
+                android:layout_toLeftOf="@+id/imageView7"
+                android:layout_toStartOf="@+id/imageView7" />
 
             <ImageView
                 android:layout_width="56dp"
@@ -229,11 +228,29 @@
                 android:paddingTop="10dp"
                 android:clickable="true"
                 android:background="#04B404"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
-                android:id="@+id/imageView2" />
-        </LinearLayout>
+                android:src="@drawable/ic_action_navigation_close"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-        <LinearLayout
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="#04B404"
+                android:clickable="true"
+                android:src="@drawable/ic_action_content_create"
+                android:id="@+id/imageView7"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_toStartOf="@+id/imageView2" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:paddingTop="10dp"
             android:orientation="horizontal"
@@ -246,25 +263,13 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:layout_width="222dp"
+                android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_height="56dp"
                 android:hint="Blue Fruit Corp \n 0500-4533456"
                 android:maxLines="2"
-                android:layout_toRightOf="@+id/imageView7"
-                android:layout_toEndOf="@+id/imageView7" />
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:background="#04B404"
-                android:clickable="true"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
-                android:id="@+id/imageView71" />
+                android:layout_toLeftOf="@+id/imageView71"
+                android:layout_toStartOf="@+id/imageView71" />
 
             <ImageView
                 android:layout_width="56dp"
@@ -275,10 +280,28 @@
                 android:paddingTop="10dp"
                 android:clickable="true"
                 android:background="#04B404"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock"
-                android:id="@+id/imageView3" />
+                android:src="@drawable/ic_action_navigation_close"
+                android:id="@+id/imageView3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="#04B404"
+                android:clickable="true"
+                android:src="@drawable/ic_action_content_create"
+                android:id="@+id/imageView71"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:layout_toStartOf="@+id/imageView3" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -290,7 +313,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Previous "
+                android:text=" Previous page "
                 android:textColor="#ffffff"
                 android:clickable="true"
                 android:id="@+id/pbutton"/>
@@ -299,7 +322,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35sp"
-                android:text="  Next  "
+                android:text="  Next page  "
                 android:textColor="#ffffff"
                 android:clickable="true"
                 android:id="@+id/nbutton"/>

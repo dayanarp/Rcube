@@ -16,21 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
-        <activity android:name=".Register"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
-        <activity android:name=".MainActivityU"
-            android:theme="@style/AppTheme.TransparentActivity"/>
-        <activity android:name=".MainActivityC"
-            android:theme="@style/AppTheme.TransparentActivity"/>
-        <activity android:name=".Request"
-            android:theme="@style/AppTheme.TransparentActivity"/>
-        <activity android:name=".ListConv"
-            android:theme="@style/AppTheme.TransparentActivity"/>
-        <activity android:name=".ListCorp"
-            android:theme="@style/AppTheme.TransparentActivity">
-        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivityU"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name=".MainActivityC"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name=".Request"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name=".ListConv"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name=".ListCorp"
+            android:theme="@style/AppTheme.TransparentActivity"></activity>
+        <activity android:name=".Terms"></activity>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.HashMap;
 
@@ -22,11 +23,26 @@ public class Login extends Activity {
         setContentView(R.layout.activity_login);
         final EditText user = (EditText) findViewById(R.id.email);
         final EditText pass = (EditText) findViewById(R.id.password);
+        TextView textP = (TextView) findViewById(R.id.textViewP);
         Button btn = (Button) findViewById(R.id.email_sign_in_button);
+        TextView join = (TextView) findViewById(R.id.textViewJ);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin(user, pass);
+            }
+        });
+        join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(new Intent(Login.this, Register.class));
+            }
+        });
+        textP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogCreate("This feature is not avaiable");
             }
         });
     }
@@ -60,7 +76,6 @@ public class Login extends Activity {
         } else{
             boolean isUser = checkUser(s_user, s_pass);
             if (isUser){
-                finish();
                 HashMap t = AppData.getUsersType();
                 User u = AppData.getUserString().get(s_user);
                 AppData.setCurrentU(u);
@@ -100,4 +115,5 @@ public class Login extends Activity {
         });
         alertDialog.show();
     }
+
 }
