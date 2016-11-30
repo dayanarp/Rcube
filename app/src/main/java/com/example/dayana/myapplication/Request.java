@@ -72,6 +72,7 @@ public class Request extends Activity {
                 alertDialog.dismiss();
                 finish();
                 startActivity(new Intent(Request.this, Request.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         alertDialog.show();

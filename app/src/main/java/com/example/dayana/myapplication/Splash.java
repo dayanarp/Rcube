@@ -41,7 +41,7 @@ public class Splash extends Activity {
 
     private void openApp(){
         User user = new User("Roberto Romero", "randr@gmail.com", "04123453443","1234","P");
-        User comp = new User("Romero & Rodrigues Corp.", "info@randr.com", "0500-456543", "4321", "C");
+        User comp = new User("R & R Corp.", "info@randr.com", "0500-456543", "4321", "C");
         HashMap<String, User> m = new HashMap();
         HashMap<String, String> m1 = new HashMap<>();
         HashMap<String, String> m2 = new HashMap<>();
@@ -60,5 +60,6 @@ public class Splash extends Activity {
         AppData.setUsersType(m2);
         finish();
         startActivity(new Intent(this, Login.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 }

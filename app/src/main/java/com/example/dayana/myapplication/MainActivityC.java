@@ -40,6 +40,7 @@ public class MainActivityC extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivityC.this, ListConv.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         imgC.setOnClickListener(new View.OnClickListener() {

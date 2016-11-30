@@ -32,18 +32,21 @@ public class ListCorp extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ListCorp.this, Request.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         iv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ListCorp.this, Request.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         iv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ListCorp.this, Request.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         btnE.setOnClickListener(new View.OnClickListener() {

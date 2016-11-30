@@ -72,7 +72,6 @@ public class ListConv extends Activity {
                 dialogCreate("This feature is not avaiable.");
             }
         });
-
     }
 
     public void dialogCreate(String message) {
@@ -85,7 +84,5 @@ public class ListConv extends Activity {
                 alertDialog.dismiss();
             }
         });
-
-
     }
 }

@@ -122,6 +122,7 @@ public class Register extends Activity {
                 alertDialog.dismiss();
                 finish();
                 startActivity(new Intent(Register.this, Login.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         alertDialog.show();

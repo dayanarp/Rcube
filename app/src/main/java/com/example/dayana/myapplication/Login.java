@@ -37,6 +37,7 @@ public class Login extends Activity {
             public void onClick(View view) {
                 finish();
                 startActivity(new Intent(Login.this, Register.class));
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         textP.setOnClickListener(new View.OnClickListener() {
@@ -81,9 +82,11 @@ public class Login extends Activity {
                 AppData.setCurrentU(u);
                 if(t.get(s_user) == "P"){
                     startActivity(new Intent(this, MainActivityU.class));
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
                 else {
                     startActivity(new Intent(this, MainActivityC.class));
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             } else {
                 dialogCreate("Invalid user or password.");
